@@ -1,10 +1,12 @@
 import React from "react";
-import BasicExample from "./BasicExample";
+import Products from "./components/Products/Products.jsx";
+import Counter from "./components/Counter.jsx";
 
 function App() {
   return (
     <div>
-      <BasicExample />
+      <Products />
+      <Counter />
     </div>
   );
 }
