@@ -1,28 +1,27 @@
-import Button from "react-bootstrap/Button";
+import FloatingLabel from "react-bootstrap/FloatingLabel";
 import Form from "react-bootstrap/Form";
-
+import "./basic.css";
 function BasicExample() {
   return (
-    <Form>
-      <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>Email address</Form.Label>
-        <Form.Control type="email" placeholder="Enter email" />
-        <Form.Text className="text-muted">
-          We'll never share your email with anyone else.
-        </Form.Text>
-      </Form.Group>
-
-      <Form.Group className="mb-3" controlId="formBasicPassword">
-        <Form.Label>Password</Form.Label>
-        <Form.Control type="password" placeholder="Password" />
-      </Form.Group>
-      <Form.Group className="mb-3" controlId="formBasicCheckbox">
-        <Form.Check type="checkbox" label="Check me out" />
-      </Form.Group>
-      <Button variant="primary" type="submit">
-        Submit
-      </Button>
-    </Form>
+    <div className="w-100 text-center ">
+      <FloatingLabel
+        controlId="floatingInput"
+        label="Ürün Adı Giriniz..."
+        className="mb-3"
+      >
+        <Form.Control type="email" placeholder="name@example.com" />
+      </FloatingLabel>
+      <FloatingLabel controlId="floatingPassword" label="Ürün Fiyatı ₺">
+        <Form.Control type="password" placeholder="Ürün Fiyatı Giriniz..." />
+      </FloatingLabel>
+      <FloatingLabel
+        controlId="floatingPassword"
+        label="Ürün Görseli Giriniz..."
+        className="mt-3"
+      >
+        <Form.Control type="text" placeholder="Ürün Fiyatı Giriniz..." />
+      </FloatingLabel>
+    </div>
   );
 }
 
