@@ -1,13 +1,23 @@
 import { useState } from "react";
 
-function Counter() {
-  const [counter, setCounter] = useState(0);
+function Counter(props) {
+  const [counter, setCounter] = useState(props.productPrice);
 
   return (
-    <div>
-      <button onClick={() => setCounter(counter - 1)}>-</button>
-      <span>{counter}</span>
-      <button onClick={() => setCounter(counter + 1)}>+</button>
+    <div className="text-center ">
+      <button
+        className="btn btn-danger"
+        onClick={() => setCounter(counter - 1)}
+      >
+        -
+      </button>
+      <span className="text-white mx-2">{counter}₺</span>
+      <button
+        className="btn btn-danger"
+        onClick={() => setCounter(counter + 1)}
+      >
+        +
+      </button>
     </div>
   );
 }

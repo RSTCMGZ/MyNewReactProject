@@ -3,8 +3,8 @@
 }
 
 .products {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 10px;
-  text-align: start;
 }
