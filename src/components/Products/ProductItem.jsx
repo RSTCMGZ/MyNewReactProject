@@ -15,12 +15,13 @@ const ProductItem = ({ product }) => {
   };
 
   return (
-    <div className="product-item  rounded-1  bg-dark p-1">
+    <div className="product-item rounded-1 bg-dark p-1">
       <div className="product-image ">
         <img src={imageUrl} alt="" />
       </div>
-      <h4 className="text-white text-center mt-2">{title}</h4>
-
+      <div className="name">
+        <h4 className="text-white text-center mt-2">{title}</h4>
+      </div>
       <Counter productPrice={productPrice} />
       <div className="d-flex  flex-column">
         <button className="btn btn-danger mt-2" onClick={clickHandler}>

@@ -32,10 +32,10 @@ const ProductForm = () => {
 
   return (
     <Form
-      className="m-3 d-flex flex-column align-items-center justify-content-center"
+      className="m-2 d-flex flex-column align-items-center justify-content-center"
       onSubmit={submitHandler}
     >
-      <Form.Group className="mb-3 ">
+      <Form.Group className="mb-3  text-danger fw-bold text-uppercase">
         <Form.Label>Ürün Adı: </Form.Label>
         <Form.Control
           type="text"
@@ -45,7 +45,10 @@ const ProductForm = () => {
         />
       </Form.Group>
 
-      <Form.Group className="mb-3 " controlId="formBasicPassword">
+      <Form.Group
+        className="mb-3  text-danger fw-bold text-uppercase"
+        controlId="formBasicPassword"
+      >
         <Form.Label>Ürün Fiyatı:</Form.Label>
         <Form.Control
           type="password"
@@ -54,7 +57,10 @@ const ProductForm = () => {
           value={productPrice}
         />
       </Form.Group>
-      <Form.Group className="mb-3" controlId="formBasicPassword">
+      <Form.Group
+        className="mb-3 text-danger fw-bold text-uppercase"
+        controlId="formBasicPassword"
+      >
         <Form.Label>Ürün Görseli:</Form.Label>
         <Form.Control
           type="text"
@@ -63,7 +69,11 @@ const ProductForm = () => {
           value={imageUrl}
         />
 
-        <Button variant="danger" type="submit" className=" w-100 mt-3">
+        <Button
+          variant="danger"
+          type="submit"
+          className=" w-100 mt-3 text-uppercase fw-bold"
+        >
           Ürün Ekle
         </Button>
       </Form.Group>

@@ -7,7 +7,9 @@ const Products = () => {
   return (
     <div className="product-wrapper">
       <NewProduct />
-      <h1 className="text-center">Products</h1>
+      <h1 className="text-center mb-5 text-danger fw-bold text-uppercase">
+        Products
+      </h1>
       <div className="products">
         {productData.map((product) => (
           <ProductItem key={product.productName} product={product} />

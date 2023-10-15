@@ -3,7 +3,7 @@ import Products from "./components/Products/Products.jsx";
 
 function App() {
   return (
-    <div>
+    <div className="h-100">
       <Products />
     </div>
   );
