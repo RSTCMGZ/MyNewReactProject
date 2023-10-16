@@ -54,7 +54,7 @@ const ProductForm = (props) => {
       >
         <Form.Label>Ürün Fiyatı:</Form.Label>
         <Form.Control
-          type="password"
+          type="number"
           placeholder="Ürün Fiyatı Giriniz..."
           onChange={priceChangeHandler}
           value={productPrice}
