@@ -2,7 +2,7 @@ import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 
-const ProductForm = () => {
+const ProductForm = (props) => {
   const [productName, setProductName] = useState("");
   const [productPrice, setProductPrice] = useState("");
   const [imageUrl, setImageUrl] = useState("");
@@ -24,6 +24,9 @@ const ProductForm = () => {
       productPrice,
       imageUrl,
     };
+
+    // props.setProducts((prevState) => [...prevState, newProductData]);
+    props.setProducts([...props.products, newProductData]);
 
     setProductName("");
     setProductPrice("");
