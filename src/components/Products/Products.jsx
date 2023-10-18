@@ -19,7 +19,12 @@ const Products = () => {
           </h2>
         ) : (
           products.map((product) => (
-            <ProductItem key={product.productName} product={product} />
+            <ProductItem
+              key={product.productName}
+              product={product}
+              products={products}
+              setProducts={setProducts}
+            />
           ))
         )}
       </div>

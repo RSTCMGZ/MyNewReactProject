@@ -73,11 +73,19 @@ const ProductForm = (props) => {
         />
 
         <Button
-          variant="danger"
+          variant="success"
           type="submit"
           className=" w-100 mt-3 text-uppercase fw-bold"
         >
           Ürün Ekle
+        </Button>
+        <Button
+          variant="danger"
+          type="button"
+          className=" w-100 mt-3 text-uppercase fw-bold"
+          onClick={() => props.setIsOpen(false)}
+        >
+          Vazgeç
         </Button>
       </Form.Group>
     </Form>

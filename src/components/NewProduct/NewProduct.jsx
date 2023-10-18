@@ -1,11 +1,20 @@
+import AddProduct from "./AddProduct";
 import ProductForm from "./ProductForm";
-
-import React from "react";
+import React, { useState } from "react";
 
 const NewProduct = (props) => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <div>
-      <ProductForm setProducts={props.setProducts} products={props.products} />
+      {isOpen ? (
+        <ProductForm
+          setIsOpen={setIsOpen}
+          setProducts={props.setProducts}
+          products={props.products}
+        />
+      ) : (
+        <AddProduct setIsOpen={setIsOpen} />
+      )}
     </div>
   );
 };
